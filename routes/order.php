@@ -49,6 +49,7 @@
         <div class="col-md-12 d-flex justify-content-center mt-5">
             <a type="button" class="btn btn-danger buttons" href="controllers/add-order.php">Add-Order</a>
              <a type="button" class="btn btn-danger buttons ms-3" href="display/displayorder.php">Display-Order</a>
+             <a type="button" class="btn btn-danger buttons ms-3" href="controllers/add-warehouse.php">add-warehouse</a>
  
         </div>
     </div>
@@ -59,6 +60,7 @@
         <div class="col-md-12 d-flex justify-content-center mt-5">
             <a type="button" class="btn btn-danger buttons" href="controllers/add-product.php">Add-Products</a>
             <a type="button" class="btn btn-danger buttons ms-3" href="display/displayproduct.php" >Display-Products</a>
+            <a type="button" class="btn btn-danger buttons ms-3" href="display/displaywarehouse.php">Display-warehouse</a>
         </div>
     </div>
 </div>
