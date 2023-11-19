@@ -47,6 +47,7 @@ else{
 
 
 if(isset($_POST["submit"])){
+
 $name=mysqli_real_escape_string($conn,$_POST["name"]);
 $customer_id=mysqli_real_escape_string($conn,$_POST["customerID"]);
 $discount=mysqli_real_escape_string($conn,$_POST["discount"]);
@@ -133,7 +134,7 @@ $customerquery="SELECT * FROM customer WHERE customer_id='$customer_id'";
 
           <div class="row">
             <div class="col-md-4 form-group mb-3">
-              <input type="text"  class="form-control"  name="name" value="<?php echo $_SESSION["name"] ?>" disabled>
+              <input type="text"  class="form-control"  name="name" value="<?php echo $_SESSION["name"]?>" >
             </div>
             </div>
 
