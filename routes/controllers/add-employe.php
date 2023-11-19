@@ -1,5 +1,8 @@
 <?php
 session_start();
+
+$_SESSION["name"];
+
 ?>
 
 
@@ -131,7 +134,7 @@ $employequery="SELECT * FROM employe WHERE employe_id='$employe_id'";
 
           <div class="row">
             <div class="col-md-4 form-group mb-3">
-              <input type="text"  class="form-control"  name="name" placeholder=" Enter Your Name">
+              <input type="text"  class="form-control"  name="name" value="<?php echo $_SESSION["name"] ?>" disabled>
             </div>
             </div>
 

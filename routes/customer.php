@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+if(!isset($_SESSION["customer"])){
+        ?>
+      <script>
+      alert("Plz add youself as a user first");
+      document.location.href="second.php";
+      </script>
+
+     <?php
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

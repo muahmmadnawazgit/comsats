@@ -33,7 +33,7 @@
   <li class="navbar-item"><a class="navbar-link" href="#">Service</a></li>
   <li class="navbar-item"><a class="navbar-link" href="#">Doctor</a></li>
   <li class="navbar-item"><a class="navbar-link" href="#">Contact</a></li>
-  <a  href="second.php" class="btn btn-success">Back</a>
+  <a  href="../index.php" class="btn btn-success">Back</a>
 </ul>
 </div>
 </nav>

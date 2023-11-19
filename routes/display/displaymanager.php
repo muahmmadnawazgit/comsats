@@ -37,7 +37,7 @@ if($conn->connect_error){
 }
 else{
 
-    $query="SELECT * FROM managers";
+    $query="SELECT * FROM employe";
     $result=mysqli_query($conn,$query);
 
 }
@@ -71,7 +71,7 @@ else{
     </div>
 </div>
 
-<div class="container-fluid ">
+<div class="container-fluid">
     <div class="row d-flex justify-content-center">
         <div class="col-md-8 mt-5">
      <div class="card">
@@ -81,10 +81,16 @@ else{
     <div class="card-body">
     <table class="table table-bordered text-center">
         <tr style="background-color:aqua;">
-         <td>Order ID</td>
+         <!-- <td>Order ID</td>
          <td>manager_id</td>
          <td>warehouse_id</td>
-         <td>employe_id	</td>
+         <td>employe_id	</td> -->
+
+         <td>ID</td>
+         <td>Name</td>
+         <td>Email</td>
+         <td>Employe ID</td>
+         <td>Warehouse ID</td>
         
        </tr>
 
@@ -95,10 +101,16 @@ else{
          <?php
          while($row=mysqli_fetch_assoc($result)){
          ?>
-        <td><?php echo $row["id"]?></td>
-         <td><?php echo $row["manager_id"]?></td>
-         <td><?php echo $row["warehouse_id"]?></td>
+        <!-- <td><?php //echo $row["id"]?></td>
+         <td><?php// echo $row["manager_id"]?></td>
+         <td><?php //echo $row["warehouse_id"]?></td>
+         <td><?php// echo $row["employe_id"]?></td> -->
+
+          <td><?php echo $row["id"]?></td>
+         <td><?php echo $row["name"]?></td>
+         <td><?php echo $row["email"]?></td>
          <td><?php echo $row["employe_id"]?></td>
+         <td><?php echo $row["warehouse_id"]?></td>
           
         </tr>
            <?php

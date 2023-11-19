@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,7 +68,7 @@ else{
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12 text-center mt-5">
-            <h1>Employe Data Table</h2>
+            <h1>Customer Data Table</h2>
         </div>
     </div>
 </div>

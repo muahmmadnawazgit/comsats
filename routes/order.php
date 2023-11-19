@@ -28,11 +28,7 @@
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#items"><span class="navbar-toggler-icon"></button>
 <div class="collapse navbar-collapse" id="items">
 <ul class="navbar-nav ms-auto">
-  <li class="navbar-item"><a class="navbar-link" href="#">Home</a></li>
-  <li class="navbar-item"><a class="navbar-link" href="#">About</a></li>
-  <li class="navbar-item"><a class="navbar-link" href="#">Service</a></li>
-  <li class="navbar-item"><a class="navbar-link" href="#">Doctor</a></li>
-  <li class="navbar-item"><a class="navbar-link" href="#">Contact</a></li>
+
   <a  href="second.php" class="btn btn-success">Back</a>
 </ul>
 </div>
@@ -53,8 +49,7 @@
         <div class="col-md-12 d-flex justify-content-center mt-5">
             <a type="button" class="btn btn-danger buttons" href="controllers/add-order.php">Add-Order</a>
              <a type="button" class="btn btn-danger buttons ms-3" href="display/displayorder.php">Display-Order</a>
-              <a type="button" class="btn btn-danger buttons ms-3 disabled" href="#" disabled>Display-Order-Details</a>
-
+ 
         </div>
     </div>
 </div>
@@ -64,8 +59,6 @@
         <div class="col-md-12 d-flex justify-content-center mt-5">
             <a type="button" class="btn btn-danger buttons" href="controllers/add-product.php">Add-Products</a>
             <a type="button" class="btn btn-danger buttons ms-3" href="display/displayproduct.php" >Display-Products</a>
-             <a type="button" class="btn btn-danger buttons ms-3 disabled" href="#" >Display-Warehouse</a>
-
         </div>
     </div>
 </div>

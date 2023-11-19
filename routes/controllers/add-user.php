@@ -49,8 +49,7 @@ $email=mysqli_real_escape_string($conn,$_POST["email"]);
 $city=mysqli_real_escape_string($conn,$_POST["city"]);
 $address=mysqli_real_escape_string($conn,$_POST["address"]);
 $phone=mysqli_real_escape_string($conn,$_POST["phone"]);
-
-// $cpassword=mysqli_real_escape_string($conn,$_POST["cpassword"]);
+$category=mysqli_real_escape_string($conn,$_POST["category"]);
 
 
 
@@ -83,18 +82,44 @@ $phone=mysqli_real_escape_string($conn,$_POST["phone"]);
    
    else{
 
-    $sql=("INSERT INTO users (name,email,city,address,phone)VALUES('$name','$email','$city','$address','$phone')");
+    $sql=("INSERT INTO users (name,email,city,address,phone,category)VALUES('$name','$email','$city','$address','$phone','$category')");
 
     if($conn->query($sql)){
       
-    //  $_SESSION["email"]=$email;
-     
-          ?>
-      <script>alert("user registered successfully");
-      document.location.href="add-user.php";
+      $_SESSION["name"]=$name;
+
+      // $_SESSION["category"]=$category;
+
+  $employe="Employe";
+      
+  if($category===$employe){
+
+   $_SESSION["employe"]="Employee";
+
+    ?>
+
+      <script>
+
+      alert("Welcome Employe");
+      document.location.href="../employe.php";
+
+      </script>
+
+     <?php
+
+}else{
+        $_SESSION["customer"]="Customer";
+
+             ?>
+
+      <script>alert("Welcome Customer");
+
+       document.location.href="../customer.php";
+
       </script>
      <?php
 
+}
       $conn->close();
    
 
@@ -170,6 +195,15 @@ $phone=mysqli_real_escape_string($conn,$_POST["phone"]);
             <div class="col-md-4 form-group mt-3 mt-md-0">
               <input type="tel" class="form-control" name="phone"  placeholder="Your Phone Number">
             </div>
+          </div>
+
+        <div class="row">
+        <div class="col-md-4 form-group mt-3 mt-md-0">
+         <select id="cars" class="form-control" name="category">
+         <option value="Customer">Customer</option>
+         <option value="Employe">Employe</option>
+         </select>
+         </div>
           </div>
 
 
